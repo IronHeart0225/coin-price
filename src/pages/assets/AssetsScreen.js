@@ -2,6 +2,7 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import 'react-tabs/style/react-tabs.css';
 import { FaBitcoin, FaStar } from 'react-icons/fa';
+import { AssetOverview } from './AssetOverview';
 
 const AssetsScreen = () => {
   return (
@@ -27,10 +28,13 @@ const AssetsScreen = () => {
           <Tab className="py-4 cursor-pointer">Vault</Tab>
         </TabList>
         <TabPanel>
-          <h2>Any content 1</h2>
+          <AssetOverview />
         </TabPanel>
         <TabPanel>
           <h2>Any content 2</h2>
+        </TabPanel>
+        <TabPanel>
+          <h2>Any content 3</h2>
         </TabPanel>
       </Tabs>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import AppLayout from './layout/AppLayout';
-import AssetsScreen from './pages/AssetsScreen';
+import AssetsScreen from './pages/assets/AssetsScreen';
 
 const App = () => {
   return (
