@@ -6,7 +6,7 @@ const AppLayout = (props) => {
   return (
     <div className="flex">
       <SideBar />
-      <div className="w-full">
+      <div className="flex flex-col w-full">
         <Header />
         {props.children}
       </div>
