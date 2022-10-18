@@ -11,7 +11,6 @@ const CoinGeckoChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       const { bitcoin } = await API.getBtcPrice();
-      console.log(bitcoin.eur)
       const market = await API.getBtcMarketChart();
       let xaxis = [];
       let ydata = [];
@@ -19,7 +18,6 @@ const CoinGeckoChart = () => {
         xaxis = [...xaxis, moment(item[0]).format('HH:mm A')];
         ydata = [...ydata, item[1].toFixed(2)];
       });
-      console.log(xaxis, ydata)
       setOptions({
         colors: ['#e88253'],
         chart: {
