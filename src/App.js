@@ -1,10 +1,12 @@
 import React from 'react';
+import AppLayout from './layout/AppLayout';
+import AssetsScreen from './pages/AssetsScreen';
 
 const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <AppLayout>
+      <AssetsScreen />
+    </AppLayout>
   );
 }
 
